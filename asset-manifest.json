@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/rajhanspol/bonfireburgers.git/static/css/main.7a8d4138.chunk.css",
+    "main.js": "/rajhanspol/bonfireburgers.git/static/js/main.922133ab.chunk.js",
+    "main.js.map": "/rajhanspol/bonfireburgers.git/static/js/main.922133ab.chunk.js.map",
+    "runtime-main.js": "/rajhanspol/bonfireburgers.git/static/js/runtime-main.f3462224.js",
+    "runtime-main.js.map": "/rajhanspol/bonfireburgers.git/static/js/runtime-main.f3462224.js.map",
+    "static/js/2.558d6601.chunk.js": "/rajhanspol/bonfireburgers.git/static/js/2.558d6601.chunk.js",
+    "static/js/2.558d6601.chunk.js.map": "/rajhanspol/bonfireburgers.git/static/js/2.558d6601.chunk.js.map",
+    "index.html": "/rajhanspol/bonfireburgers.git/index.html",
+    "static/css/main.7a8d4138.chunk.css.map": "/rajhanspol/bonfireburgers.git/static/css/main.7a8d4138.chunk.css.map",
+    "static/js/2.558d6601.chunk.js.LICENSE.txt": "/rajhanspol/bonfireburgers.git/static/js/2.558d6601.chunk.js.LICENSE.txt",
+    "static/media/landingpagebrgr1.8cda51b4.jpg": "/rajhanspol/bonfireburgers.git/static/media/landingpagebrgr1.8cda51b4.jpg",
+    "static/media/landingpagebrgr2.b4611614.jpg": "/rajhanspol/bonfireburgers.git/static/media/landingpagebrgr2.b4611614.jpg",
+    "static/media/landingpagebrgr3.f91a85f3.jpg": "/rajhanspol/bonfireburgers.git/static/media/landingpagebrgr3.f91a85f3.jpg",
+    "static/media/landingpagebrgr4.47689221.jpg": "/rajhanspol/bonfireburgers.git/static/media/landingpagebrgr4.47689221.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f3462224.js",
+    "static/js/2.558d6601.chunk.js",
+    "static/css/main.7a8d4138.chunk.css",
+    "static/js/main.922133ab.chunk.js"
+  ]
+}
