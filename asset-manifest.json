@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/bonfireburgers/static/css/main.914b71a0.chunk.css",
+    "main.css": "/bonfireburgers/static/css/main.1312745b.chunk.css",
     "main.js": "/bonfireburgers/static/js/main.2f2ec3a8.chunk.js",
     "main.js.map": "/bonfireburgers/static/js/main.2f2ec3a8.chunk.js.map",
     "runtime-main.js": "/bonfireburgers/static/js/runtime-main.8b85c844.js",
@@ -8,7 +8,7 @@
     "static/js/2.2f337776.chunk.js": "/bonfireburgers/static/js/2.2f337776.chunk.js",
     "static/js/2.2f337776.chunk.js.map": "/bonfireburgers/static/js/2.2f337776.chunk.js.map",
     "index.html": "/bonfireburgers/index.html",
-    "static/css/main.914b71a0.chunk.css.map": "/bonfireburgers/static/css/main.914b71a0.chunk.css.map",
+    "static/css/main.1312745b.chunk.css.map": "/bonfireburgers/static/css/main.1312745b.chunk.css.map",
     "static/js/2.2f337776.chunk.js.LICENSE.txt": "/bonfireburgers/static/js/2.2f337776.chunk.js.LICENSE.txt",
     "static/media/landingpagebrgr1.8cda51b4.jpg": "/bonfireburgers/static/media/landingpagebrgr1.8cda51b4.jpg",
     "static/media/landingpagebrgr2.b4611614.jpg": "/bonfireburgers/static/media/landingpagebrgr2.b4611614.jpg",
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.8b85c844.js",
     "static/js/2.2f337776.chunk.js",
-    "static/css/main.914b71a0.chunk.css",
+    "static/css/main.1312745b.chunk.css",
     "static/js/main.2f2ec3a8.chunk.js"
   ]
 }
