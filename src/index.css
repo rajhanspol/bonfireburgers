@@ -581,12 +581,18 @@ button:disabled{
     margin-bottom: 10px;
   }
 
+  .cartItemContainer > div > h4{
+    font-size: 1.4rem;
+  }
+
   .cartItemContainer > div > p{
-    font-size: 0.9rem; 
+    font-size: 1.2rem; 
+    font-weight: bold;
   }
   
   .cartItemContainer > div > button{
-    font-size: 0.8rem;
+    font-size: 1rem;
+    font-weight: bold;
     background-color: rgb(248, 78, 78); 
     border: 1px solid black
   }
