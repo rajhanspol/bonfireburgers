@@ -1,24 +1,62 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {Switch, Route} from 'react-router-dom'
+import './index.css';
+import CheckOutPage from './Pages/CheckOutPage';
+import FrontPage from './Pages/FrontPage';
+import LogInPage from './Pages/LogInPage';
+import OrderPage from './Pages/OrderPage';
+import SignInPage from './Pages/SignInPage';
+import ViewOrderPage from './Pages/ViewOrderPage';
+import AdminPage from './Pages/AdminPage'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+
+      <Switch>
+        <Route exact path='/'>
+          <FrontPage />
+        </Route>
+      </Switch>
+
+      <Switch>
+        <Route path='/orderonline'>
+          <OrderPage />
+        </Route>
+      </Switch>
+
+      <Switch>
+        <Route path='/signin'>
+          <SignInPage />
+        </Route>
+      </Switch>
+
+      <Switch>
+        <Route path='/login'>
+          <LogInPage />
+        </Route>
+      </Switch>
+
+      <Switch>
+        <Route path="/checkoutpage">
+          <CheckOutPage />
+        </Route>
+      </Switch>
+
+      <Switch>
+        <Route path="/vieworders">
+          <ViewOrderPage/>
+        </Route>
+      </Switch>
+
+      <Switch>
+        <Route path="/adminpage">
+          <AdminPage />
+        </Route>
+      </Switch>
+
+    </React.Fragment>
+    
   );
 }
 

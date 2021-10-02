@@ -1,13 +1,907 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html, body {
+  font-family: 'Roboto', sans-serif;
+  margin: auto;
+  max-width: 1200px;
+  background-color: rgb(255, 254, 221);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+button:hover{
+  cursor: pointer;
+}
+
+button:disabled{
+  cursor: not-allowed;
+}
+
+
+.homePage{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.homepageContent{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 80vh;
+  overflow: auto;
+}
+
+
+/* NAVIGATION =========================================================== */
+.navigation{
+  height: fit-content;
+  background-color: #272727;
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  padding-bottom: 0;
+  padding-top: 0;
+  
+}
+
+.navigation > div{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.navigation > div > h1{
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.navigation div > h4{
+  font-size: 1rem;
+  margin-left: auto;
+  margin-right: 0;
+  font-weight: normal;
+}
+
+.navigation > a{
+  width: 20%;
+  
+  
+}
+
+.navigation > a > button{
+  width: 100%;
+  text-align: center;
+  background-color: #272727;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  /* border: 1px solid white; */
+  height: 100%;
+}
+
+.navigation > button{
+  width: 15%;
+  text-align: center;
+  background-color: #272727;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  
+  /* border: 1px solid white; */
+}
+
+.navigation > p{
+  width: 15%;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1100px){
+  .navigation{
+    
+    height: 20vh;
+  }
+  .navigation > div{
+    flex-direction: row;
+  }
+  .navigation > div > h4{
+    font-size: 0.8rem;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  .navigation > div > h1{
+    font-size: 2rem;
+  }
+  .navigation > a{
+    width: 25%;
+    
+    
+  }
+}
+
+
+
+
+
+/* DESCRIPTION ================================================== */
+
+
+.description{
+  width: 48%;
+  padding: 1rem;
+  text-align: left;
+  align-items: center;
+}
+
+
+.description > h1{
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+.description > p{
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.description > a{}
+
+.description >a > button{
+  height: 50px;
+  width: 200px;
+  font-size: 1rem;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  border: none
+}
+
+@media only screen and (max-width: 1100px){
+  .description{
+    width: 100%;
+  }
+}
+
+/* CAROUSEL ====================================================== */
+
+.carousel{
+  width: 46%;
+  padding: 1rem;
+}
+
+.carousel > img{
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 1100px){
+  .carousel{
+    width: 100%;
+  }
+}
+
+/* DETAILS ================================================================= */
+
+.details{
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.details > div{
+  width: 30%;
+  text-align: center;
+  background-color: white;
+  padding: 10px;
+}
+
+.details > div > h1{
+  font-size: 4rem;
+  color: rgb(245, 38, 38);
+  margin: 3px;
+}
+
+.details > div > h2{
+  margin: 3px;
+}
+
+.details > div > h3{
+  margin: 3px;
+}
+
+@media only screen and (max-width: 1100px){
+  .details{
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  .details > div{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+
+
+/* SIGNIN PAGE ====================================================================== */
+
+.signinTitle{
+  font-size: 3rem;
+  text-align: center;
+}
+
+.signinForm{
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  
+}
+
+.signinForm > div{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  align-items: center;
+}
+
+.signinForm > div > label{
+  width: 50%;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.signinForm > div > input{
+  width: 50%;
+  font-size: 1.5rem;
+  font-family: "Roboto", monospace;
+}
+
+.signinForm > div > button{
+  width: 20%;
+  height: 50px;
+  font-size: 1rem;
+  border: none;
+  background-color: black;
+  color: white;
+}
+
+.alreadyAcc{
+  text-align: center;
+}
+
+
+.alreadyAcc > a > button{
+  width: 10%;
+  height: 30px;
+  font-size: 1rem;
+  border: none;
+  background-color: black;
+  color: white;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 1100px){
+  .alreadyAcc > a > button{
+    width: 20%;
+  }
+}
+
+
+
+
+/* LOGIN PAGE ==================================================================================================== */
+
+.logInPage{
+  text-align: center;
+}
+
+.logInPage > button{
+  width: 20%;
+  height: 50px;
+  font-size: 1rem;
+  border: none;
+  background-color: black;
+  color: white;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 1100px){
+  .logInPage > button{
+    width: 30%;
+  }
+}
+
+/* MENU CONTAINER ================================================ */
+
+.menuandCart{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  overflow: none;
+}
+
+.menuContainer{
+  height: 80vh;
+  width: 65%;
+  margin-top: 20px;
+  overflow: auto;
+  background-color: #272727;
+  padding: 10px;
+  /* border-radius: 10px; */
+}
+
+@media only screen and (max-width: 1100px){
+  .menuContainer{
+    height: 75vh;
+    width: 65%;
+  }
+}
+
+
+/* MENU ITEMS  ============================================================*/
+
+.itemHeader{
+  width: 100%;
+ 
+}
+
+.itemHeader > h3{
+  font-size: 1.5rem;
+  background-color: #272727;
+  color: white;
+  font-weight: normal;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.itemContentCards{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.itemContentCards > div{
+  background-color: white;
+  padding: 10px;
+  /* border-radius: 10px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.itemContentCards > div > h3{
+  width: 60%;
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.itemContentCards > div > h4{
+  width: 20%;
+  text-align: center;
+  margin: 0;
+}
+
+.itemContentCards > div > button{
+  padding: 0;
+  margin: 0;
+  width: 20%;
+  height: 20px;
+  border: 1px solid black;
+  text-align: center;
+  background-color: rgb(248, 78, 78);
+  font-size: 0.7rem;
+}
+
+@media only screen and (max-width: 1100px){
+  .itemContentCards{
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+
+  .itemContentCards > div > h3{
+    font-size: 1.1rem;
+  }
+  
+
+}
+
+/* CART CONTAINER ====================================================== */
+
+
+
+.cartContainer{
+  width: 30%;
+  text-align: center;
+  background-color: #272727;
+  padding: 10px;
+  margin-top: 20px;
+  /* border-radius: 10px; */
+}
+
+.cartItemContainer{
+  width: 100%;
+  height: 67%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  
+}
+
+.cartItemContainer > div{
+  background-color: white;
+  width: 94%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  padding: 5px;
+  /* border-radius: 5px; */
+  height: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.cartItemContainer > div > h4{
+  font-size: 1rem;
+  width: 50%;
+  
+}
+
+.cartItemContainer > div > p{
+  font-size: 0.8rem; 
+}
+
+.cartItemContainer > div > button{
+  font-size: 0.8rem;
+  background-color: rgb(248, 78, 78); 
+  border: 1px solid black
+}
+
+.cartDetails{
+  background-color: white;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border-radius: 10px; */
+  margin-top: 10px;
+}
+
+.cartDetails > p{
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.cartDetails > a{
+  width: 60%;
+  height: 40px;
+}
+
+.cartDetails > a >button{
+  width: 100%;
+  height: 40px;
+  background-color: rgb(252, 252, 62);
+  font-size: 1rem;
+  
+}
+
+
+@media only screen and (max-width: 1100px){
+  .cartContainer{
+    width: 30%;
+  }
+
+  .cartItemContainer{
+    height: 50vh;
+  }
+  .cartItemContainer > div{
+    width: 100%;
+    height: 4rem;
+    padding: 0;
+  }
+
+  .cartItemContainer > div > h4{
+    font-size: 0.7rem;
+  }
+  .cartItemContainer > div > p{
+    font-size: 0.7rem;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  .cartItemContainer > div > button{
+    font-size: 0.7rem;
+  }
+}
+
+/* @media only screen and (max-width: 600px){} */
+
+/* Cart Modal ========================================================================================================================*/
+
+
+.cartFooter{
+  display: none;
+}
+
+
+@media only screen and (max-width: 600px){
+  .menuContainer{
+    width: 100%;
+    height: 69vh;
+  }
+
+  .cartContainer{
+    display: none;
+  }
+  .cartFooter{
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: #272727;
+  }
+
+  .cartFooter > button{
+    border: none;
+    background-color: #272727;
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .cartItemContainer{
+    width: 100%;
+    height: 50vh;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .cartItemContainer > div{
+    background-color: white;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    /* border-radius: 5px; */
+    height: 2.5rem;
+    margin-bottom: 10px;
+  }
+
+  .cartItemContainer > div > p{
+    font-size: 0.9rem; 
+  }
+  
+  .cartItemContainer > div > button{
+    font-size: 0.8rem;
+    background-color: rgb(248, 78, 78); 
+    border: 1px solid black
+  }
+  
+  .cartDetails > a >button{
+    font-weight: bold;
+    border: none;
+    margin-bottom: 10px;
+  }
+
+
+}
+
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+  position: fixed;
+  bottom: 0;
+  background-color: #fefefe;
+  width: 100%;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {bottom: -300px; opacity: 0} 
+  to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+
+
+/* CHECK OUT PAGE ================================================================================================================== */
+.chkOutFormContainer{
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.checkoutCart{
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.checkoutCart > button{
+  width: 15%;
+  height: 40px;
+  background-color: #272727;
+  color: white;
+  border: none;
+}
+
+.checkoutCart > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  height: 100%;
+  margin-top: 20px;
+  align-items: center;
+  background-color: white;
+}
+
+@media only screen and (max-width: 600px){
+  .checkoutCart > div{
+    width: 80%;
+    border: 2px solid #272727;
+    line-height: 0.3rem;  
+  }
+  .checkoutCart > button{
+    width: 40%;
+  }
+
+  .chkOutFormContainer > form > div > input{
+    width: 80%;
+  }
+
+  .chkOutFormContainer > form > div > button{
+    width: 40%;
+  }
+
+}
+
+
+/* VIEW CURRENT ORDER PAGE ==========================================================================================*/
+
+.currentorderContainer{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.currentorderContainer > div{
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  background-color: white;
+  /* line-height: 0.5rem; */
+  padding: 15px;
+  margin-top: 30px;
+  border: 2px solid #272727;
+
+}
+
+.currentorderContainer > div > h2{
+  width: 60%;
+  /* line-height: 0.4rem; */
+}
+
+.currentorderContainer > div > h4{
+  width: 40%;
+  /* line-height: 0.4rem; */
+}
+
+.currentorderContainer > div > h3{
+  width: 100%;
+  /* line-height: 0.4rem; */
+}
+
+.currentorderContainer > div > p{
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 0;
+  background-color: rgb(207, 207, 207);
+  padding: 5px;
+  font-size: 1rem;
+  border-radius: 5px;
+  
+}
+
+.currentorderContainer > div > h5{
+  width: 100%;
+  font-size: 1.5rem;
+  line-height: 0.4rem;
+}
+
+.currentorderContainer > div > div{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.currentorderContainer > div > div > button{
+  border: none;
+  width: 30%;
+  height: 50px;
+  font-size: 1.5rem;
+}
+
+.currentorderContainer > div > div > button:hover{
+  cursor: default;
+}
+
+@media only screen and (max-width: 1100px){
+  .currentorderContainer > div{
+    width: 85%;
+    padding: 5px;
+  }
+  .currentorderContainer > div > h4{
+    line-height: 1rem;
+    text-align: center;
+  }
+
+  .currentorderContainer > div > div > button{
+    width: 45%;
+  }
+}
+
+
+/* ADMIN PAGE ================================================================================================================= */
+
+
+.adminPageContainer{
+  display: flex;
+  
+  width: 100%;
+}
+
+.sideBar{
+  margin-top: 10px;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border-right: 2px solid #272727; 
+}
+
+.sideBar > button{
+  margin-top: 50px;
+  height: 60px;
+  font-size: 1rem;
+  background-color: white;
+}
+
+.adminDetails{
+  width: 80%;
+  height: 70vh;
+  overflow: auto;
+}
+
+.menuEditContainer{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 20px;
+}
+
+.navBtn{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.navBtn > button{
+  width: 30%;
+  height: 40px;
+  background-color: white;
+}
+
+.addItemsContainer{
+  margin-top: 30px;
+  text-align: center;
+}
+
+
+.editItemsContainer{
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.editItemsContainer > select{
+  height: 40px;
+  width: 40%;
+  font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 1100px){
+  .adminDetails{
+    height: 80vh;
+  }
+  .addItemsContainer>form{
+    width: 100%;
+  }
+  .addItemsContainer>form>div>button{
+    width: 80%;
+  }
+
+
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
