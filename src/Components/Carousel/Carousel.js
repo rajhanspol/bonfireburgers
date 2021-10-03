@@ -11,6 +11,7 @@ function Carousel(){
 
     const [displayImg, setDisplayImg] = useState(0)
     const images = [img1, img2, img3, img4]
+    
     function imageNextHandler(){
         if(displayImg < 3){
             setDisplayImg(img => img + 1)
