@@ -14,9 +14,9 @@ Customers on authentication can place orders and view order status(wether it has
 Admin can view all orders placed by different customers, and accept or reject orders. Admin can also change or edit menu items. More admin featuers are yet to be added.
 
 
-<strong>As a customer -</strong> 
+<strong>As a customer -</strong> <br>
 
-
+<br>
 Select order Items - 
 <img src="./src/img/orderSnip.PNG" alt="order image" /><br>
 
