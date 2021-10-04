@@ -10,6 +10,7 @@ function CheckOutPage(){
 
     return (
         <React.Fragment>
+            {/* Check if there is a user logged in, if not redirect to login page */}
             {authCtx.currentUser? null : <Redirect to="/login" />}
             <CheckOutContainer />
         

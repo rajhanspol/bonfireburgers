@@ -21,7 +21,7 @@ function AuthContextProvider(props){
         return auth.signOut()
     }
 
-
+    
     useEffect(() => {
         const unsub = auth.onAuthStateChanged(user => {
             setCurrentUser(user)

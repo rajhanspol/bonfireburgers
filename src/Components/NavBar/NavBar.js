@@ -37,8 +37,6 @@ function NavBar(){
                 <button >Sign In</button>
             </Link>
 
-            {/* <p style={{display: authCtx.currentUser && authCtx.currentUser.email != "admin@bonfire.com"? "block" : "none"}}>{authCtx.currentUser && authCtx.currentUser.email}</p> */}
-
             <Link to="/adminpage" style={{display: authCtx.currentUser && authCtx.currentUser.email === "admin@bonfire.com"? "block" : "none"}}>
                 <button>Admin Dashboard</button>
             </Link>

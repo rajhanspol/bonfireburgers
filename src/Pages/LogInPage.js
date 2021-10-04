@@ -14,6 +14,7 @@ function LogInPage(){
     const [loading, setLoading] = useState(false)
     const history = useHistory()
 
+    // Log in function :
     async function onSubmitHandler(e){
         e.preventDefault()
         
@@ -30,6 +31,7 @@ function LogInPage(){
         
     }
 
+    // Test User login to review this project
     async function onTestLoginHandler(e){
         e.preventDefault()
         
@@ -44,6 +46,7 @@ function LogInPage(){
         }    
     }
 
+    // Test admin login to review admin functionality
     async function onAdminLoginHandler(e){
         e.preventDefault()
         

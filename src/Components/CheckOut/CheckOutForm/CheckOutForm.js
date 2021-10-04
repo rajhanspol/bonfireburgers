@@ -16,8 +16,8 @@ function CheckOutForm(props){
         {name: item.name, qty: item.qty}
     ))
 
-    //console.log(orderItems)
-
+    
+        // Collect order data and update state in context. Keep orderAccepted/Rejected to false. This will be updated by admin account. The user will be notified of this in viewOrder page.
     function placeOrderHandler(){
         let orderData = {
             name: nameRef.current.value,
@@ -29,6 +29,7 @@ function CheckOutForm(props){
             orderRejected: false,
             uid: props.uid
         }
+        // Check if any fields are missing
         if(nameRef.current.value === "" || locationRef.current.value === "" || contactRef.current.value === ""){
             return setError("Please enter missing fields") 
         } else {
@@ -38,8 +39,6 @@ function CheckOutForm(props){
     }
 
 
-
-    //console.log(orderData)
 
     return(
         <div className="chkOutFormContainer">
@@ -66,5 +65,3 @@ function CheckOutForm(props){
 }
 
 export default CheckOutForm
-
-//() => {props.onPlaceOrder(orderData)}

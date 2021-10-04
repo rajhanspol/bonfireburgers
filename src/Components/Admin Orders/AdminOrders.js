@@ -8,6 +8,8 @@ function AdminOrders(){
     const [toggleBtn, setToggleBtn] = useState(true)
     const orderDatabase = firestore.collection('orders')
 
+
+    // Get all user placed orders. Admin account has access to all placed orders as per firebase security rules.
     useEffect(() => {
         orderDatabase
         .onSnapshot(
@@ -18,8 +20,8 @@ function AdminOrders(){
             })
     }, [])
 
-    // .doc(doc.id).update({foo: "bar"});
-
+    
+    // on Accept or reject order, change orderAccepted or orderRejected value to true, which will be updated for the user on View Orders page.
     function acceptOrder(id){
         orderDatabase
             .doc(id)
@@ -51,9 +53,6 @@ function AdminOrders(){
             toggleButton = {toggleBtn}
         />
     ))
-
-    // console.log(allOrders)
-
 
     return(
     

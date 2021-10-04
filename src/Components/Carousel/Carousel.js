@@ -12,6 +12,7 @@ function Carousel(){
     const [displayImg, setDisplayImg] = useState(0)
     const images = [img1, img2, img3, img4]
     
+    // Display next image or revert back to first image when last image is reached.
     function imageNextHandler(){
         if(displayImg < 3){
             setDisplayImg(img => img + 1)

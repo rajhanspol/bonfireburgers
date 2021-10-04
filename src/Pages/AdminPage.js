@@ -26,6 +26,8 @@ function AdminPage(){
                 displayMenuPage={setMenuPage}
                 // displayextraCharge={setExtraCharge}
             />
+
+            {/* Switch between recieved orders and menu edit */}
             <div className="adminDetails" style={{display: orderPage? "block" : "none"}}><AdminOrders /></div>
             <div className="adminDetails" style={{display: menuPage? "block" : "none"}}><MenuEdit /></div>
             {/* <div className="adminDetails" style={{display: extraCharge? "block" : "none"}}><ExtraCharges/></div> */}

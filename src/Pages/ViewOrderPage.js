@@ -11,7 +11,8 @@ function ViewOrderPage(){
     const [myOrder, setMyOrder] = useState([])
     const orderDatabase = firestore.collection('orders')
 
-    
+    // Get order data only of current user. Current user cannot access data of other users as per security rules setup in firebase.
+    // onSnapshot listnes for order updates(order accepted or rejected)
     useEffect(() => {
         orderDatabase.where("uid", "==", authCtx.currentUser.uid)
             .onSnapshot((querySnapshot) => {
@@ -19,7 +20,7 @@ function ViewOrderPage(){
                 querySnapshot.forEach((doc) => {
                     order.push(doc.data());
                 });
-                // console.log(order);
+                
                 setMyOrder(order)
             });
 
@@ -29,7 +30,7 @@ function ViewOrderPage(){
 
 
     
-    // console.log(ctx.currentOrder)
+    // Map all orders and pass data to ViewOrderContainer
 
     let displayorders = myOrder.map((data, index) => (
         <ViewOrderContainer

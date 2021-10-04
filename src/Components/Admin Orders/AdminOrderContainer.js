@@ -1,7 +1,8 @@
 function AdminOrderContainer(props){
 
     
-
+    // Calculate tax on subtotal
+    // add tax and delivery charge to subtotal to find final total
     const gst = (props.subtotal * 2.5 / 100)
     const deliveryCharge = 30
     let tempTotal = props.subtotal + gst + gst + deliveryCharge

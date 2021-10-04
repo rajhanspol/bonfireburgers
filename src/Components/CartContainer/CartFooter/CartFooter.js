@@ -1,6 +1,8 @@
 import {useContext} from 'react'
 import {Context} from '../../../Context/Context'
 
+// Cart footer only shows up when screen is small.
+
 function CartFooter(props){
 
     const ctx = useContext(Context)

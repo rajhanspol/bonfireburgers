@@ -7,11 +7,15 @@ function MenuContainer(){
 
     const ctx = useContext(Context)
 
+    // Following loops are done because of the way menu data is stored in firebase.
+
+    // First get the different Menu Groups, and then add corresponding items to them. eg. Wings is the Group name, and Classic Chicken Wings is a dish that should be placed in wings.
+
     let menuHeaderArr = []
     let menuArr = []
 
 
-    // Get all unique menu groups using nested for loops, then use if statement to avoid duplicates
+    // Get all unique MENU GROUPS using nested for loops, then use if statement to avoid duplicates
     for(let i = 0; i < ctx.orderMenu.length; i++){
         for(let j=0; j < ctx.orderMenu.length; j++){
             if(ctx.orderMenu[i].group === ctx.orderMenu[j].group){

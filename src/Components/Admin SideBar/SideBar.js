@@ -1,5 +1,7 @@
 function SideBar(props){
 
+    // Change display between view orders and edit menu using state
+
     function showOrderPage(){
         props.displayOrderPage(true)
         props.displayMenuPage(false)

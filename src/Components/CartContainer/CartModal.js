@@ -4,7 +4,7 @@ import {Context} from '../../Context/Context'
 import CartDetails from "./CartDetails/CartDetails"
 import CartFooter from "./CartFooter/CartFooter"
 
-
+// Cart modal only displays on small screens
 function CartModal(props){
 
     const ctx = useContext(Context)
@@ -28,7 +28,7 @@ function CartModal(props){
                 style={{display: ctx.toggleModal? "block" : "none"}}
                 onClick={ctx.hideModal}
                 >
-                
+                {/* stopPropagation is used to not close modal when user clicks on modal content */}
                 <div className="modal-content" onClick={e => e.stopPropagation()}>
                     <CartFooter 
                     toggleModal={ctx.hideModal}

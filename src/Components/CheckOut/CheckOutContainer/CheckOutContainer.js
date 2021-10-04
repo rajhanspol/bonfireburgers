@@ -12,9 +12,11 @@ function CheckOutContainer(){
     const authCtx = useContext(AuthContext)
     const ctx = useContext(Context)
 
+    // To find number of cart items
     const allItems = ctx.cartState.items.map(item => item.qty)
     const totalItems = allItems.reduce((a,b) => a + b, 0)
 
+    // To calculate tax and delivery charge and add them to subtotal to create final total payable by user
     const gst = (ctx.cartState.totalAmount * 2.5 / 100)
     const deliveryCharge = 30
     let tempTotal = ctx.cartState.totalAmount + gst + gst + deliveryCharge

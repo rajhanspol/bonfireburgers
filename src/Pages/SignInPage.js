@@ -18,7 +18,7 @@ function SignInPage(){
     const [loading, setLoading] = useState(false)
     const history = useHistory()
 
-
+    // New user sign in function
     async function onSubmitHandler(e){
         e.preventDefault()
 
