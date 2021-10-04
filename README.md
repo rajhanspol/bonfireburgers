@@ -30,5 +30,17 @@ Add your details and place your order -
 <img src="./src/img/placeOrderSnip.PNG" alt="place order image" /><br>
 
 <br>
-Once your orders are placed, view your orders - 
+Once your orders are placed, view your orders and get notified of order status- 
 <img src="./src/img/vieworderSnip.PNG" alt="view order image" /><br>
+
+
+<strong>As an admin -</strong> <br>
+
+<br>
+Accept or reject orders - 
+<img src="./src/img/adminOrder.PNG" alt="Admin order image" /><br>
+
+<br>
+Add or edit menu items - 
+<img src="./src/img/adminMenu.PNG" alt="Admin menu image" /><br>
+
