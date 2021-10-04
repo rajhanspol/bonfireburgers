@@ -18,17 +18,17 @@ Admin can view all orders placed by different customers, and accept or reject or
 
 
 Select order Items - 
-<img src="./src/img/orderSnip.PNG" alt="order image" />
+<img src="./src/img/orderSnip.PNG" alt="order image" /><br>
 
 
-
+<br>
 View selected Items and add more or checkout (if no user is logged in, checkout will redirect to login Page)-
-<img src="./src/img/checkOutSnip.PNG" alt="checkout image" />
+<img src="./src/img/checkOutSnip.PNG" alt="checkout image" /><br>
 
-
+<br>
 Add your details and place your order - 
-<img src="./src/img/placeOrderSnip.PNG" alt="place order image" />
+<img src="./src/img/placeOrderSnip.PNG" alt="place order image" /><br>
 
-
+<br>
 Once your orders are placed, view your orders - 
-<img src="./src/img/vieworderSnip.PNG" alt="view order image" />
+<img src="./src/img/vieworderSnip.PNG" alt="view order image" /><br>
